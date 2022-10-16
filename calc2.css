@@ -1,0 +1,127 @@
+body {
+    /*user-select: none;*/
+    display: flex;
+    /*подключение flexbox сетки*/
+    justify-content: center;
+    /*выравнивание по горизонтали*/
+    align-items: center;
+    /*выравнивание по вертикали*/
+    min-height: 100px;
+    background: #708090;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: #2121210b;
+
+    border-radius: 20px;
+    max-width: 450px;
+    font-family: "Arial", serif;
+    padding: 18px;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+        /*тень*/
+    10px 10px 70px rgba(0, 0, 0, 0.25),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.item
+{
+
+    color: #FFF0F5;
+    background: linear-gradient(90deg, #2F4F4F, #ffffff5c);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 20px;
+    /*закругление углов*/
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+        /*тень*/
+    10px 10px 70px rgba(0, 0, 0, 0.25),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.input {
+    min-height: 60px;
+
+    height: auto;
+    padding: 5px 20px;
+    grid-column: 1/-1;
+    font-size: 35px;
+    justify-content: flex-end;
+    background: #1E90FF;
+    margin: 0;
+
+
+    vertical-align: bottom;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+        /*тень*/
+    10px 10px 70px rgba(0, 0, 0, 0.25),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.upper {
+    font-size: 20px;
+    margin-left: 3px;
+    margin-top: -20px;
+
+    width: 30px;
+
+    color: #FFFFFF;
+}
+
+.back,
+.percent,
+.divide,
+.mul,
+.sub,
+.add {
+    width: 45px;
+    height: 30px;
+
+    color: #000080;
+    background: linear-gradient(90deg, #DEB887, #ffffff5c);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+        /*тень*/
+    10px 10px 70px rgba(0, 0, 0, 0.25),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 15px rgba(0, 0, 0, 0.5);
+
+
+}
+.clean {
+    width: 45px;
+    height: 30px;
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #FF0000, #ffffff5c);
+    border-radius: 20px;
+
+}
+.equal {
+    background-color: #00FF00;
+    border-radius: 20px;
+    width: 40px;
+    height: 35px;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+        /*тень*/
+    10px 10px 70px rgba(0, 0, 0, 0.25),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
